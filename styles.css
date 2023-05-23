@@ -1,0 +1,122 @@
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #1D4ED8; 
+  --secondary-color: #333333;
+  --background: #F2F3F5;
+  --fundo-color: #FFFFFF;
+}
+
+body {
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif; 
+  background: url('./assets/fundo.png');
+}
+
+.wrapper {
+  width: 850px;
+  /* padding: 0 17rem; */
+}
+
+main {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.cabecalho {
+  width: 100%;
+
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+
+  margin-top: 14px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);  
+}
+
+.cabecalho .menu img{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.apresentacao {
+  font-family: 'Rubik', sans-serif;
+  color: var(--secondary-color);
+  display: flex;
+  margin-top: 100px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.apresentacao-left {
+  width: 400px;
+  display: flex;
+  justify-content: space-between  ;
+  flex-direction: column;
+  padding: 26px 17px;
+}
+.apresentacao-nome {
+  margin-bottom: 30px;
+}
+
+.apresentacao-nome p  {
+   font-size: 38px;
+   font-weigth: 400;
+   
+}
+
+.apresentacao-nome span {
+  color: var(--primary-color);
+
+}
+
+.apresentacao-nome small {
+  font-size: 20px;
+}
+
+.apresentacao-image img {
+  width: 300px;
+}
+
+button {
+
+  border: none;  
+  padding: 5px 8px;
+  border-radius: 15px;
+  border: 3px solid var(--background);
+  cursor: pointer;
+  transition: border 1s ease-out;
+}
+
+button:hover {
+ background: var(--background);
+ border: 3px solid var(--primary-color);
+ 
+ 
+}
+
+button img {
+  width: 35px;
+  heigh: 35px;  
+}
+
+.sociais {
+  display: flex;
+
+  margin-top: 20px;
+  gap: 15px;
+}
