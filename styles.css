@@ -61,22 +61,26 @@ main {
 }
 
 .apresentacao {
-  font-family: 'Rubik', sans-serif;
-  color: var(--secondary-color);
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
   margin-top: 50px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+ 
 
+  color: var(--secondary-color);
+  font-family: 'Rubik', sans-serif;
+
+  margin-bottom: 1rem;
 
 }
 
 .apresentacao-left {
   width: 400px;
   display: flex;
-  /* justify-content: space-between  ; */
   flex-direction: column;
-  padding: 26px 17px;
+  justify-content: space-between;
+  padding: 26px 26px 0;
+
 }
 .apresentacao-nome {
   margin-bottom: 30px;
@@ -97,11 +101,16 @@ main {
   font-size: 20px;
 }
 
+.apresentacao-image {
+  width: 400px;
+  display: flex;
+  justify-content: center;
 
+}
 .image-principal {
-  width: 250px;
-  heigh: 100vh;
-  background-size: center;
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
 }
 .ph {
   font-size: 46px;
@@ -132,8 +141,14 @@ button img {
 
 .sociais {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-top: 50px;
   gap: 15px;
+}
+
+
+.rodape {
+  color: var(--background);
+  background: var(--primary-color);
 }
