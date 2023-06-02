@@ -16,12 +16,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
 p,
 h1,
 h2,
@@ -34,13 +28,7 @@ h6 {
 
 button,
 input {
-  border: 0;
   font-family: "Inter", sans-serif;
-}
-
-button:focus,
-input:focus {
-  border: 0;
 }
 
 body {
@@ -90,6 +78,7 @@ header #nav_list {
   justify-content: space-between;
   color: #C4C4C4;
   gap: 64px;
+  cursor: pointer;
 }
 
 header #nav_list li {
@@ -98,4 +87,61 @@ header #nav_list li {
 
 .mobile-menu {
   display: none;
+}
+
+.home {
+  width: 100%;
+  margin-top: 45px;
+  padding-top: 80px;
+}
+
+.looper {
+  width: 700px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home-left p {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.home-left strong {
+  color: #00D2DF;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+.home-left .home-buttons {
+  margin-top: 60px;
+  display: flex;
+  gap: 24px;
+}
+
+.home-left .home-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 11px 32px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%) 1;
+  background: transparent;
+  color: #FFFFFF;
+}
+
+.presentation button {
+  padding: 11px 23px;
+}
+
+main {
+  padding: 0 180px;
+  color: #FFFFFF;
+  display: flex;
+  font-weight: 600;
+  width: 100%;
+  position: relative;
 }

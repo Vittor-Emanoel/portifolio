@@ -1,3 +1,15 @@
 @import "_variables";
 @import "_reset";
-@import "_header"
+@import "_header";
+@import "_home";
+
+
+main {
+  padding: 0 180px;
+  color: $light;
+  display: flex;
+  font-weight: 600;
+  width: 100%;
+  position: relative;
+}
+

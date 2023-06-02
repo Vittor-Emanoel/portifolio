@@ -1,0 +1,58 @@
+@import "_variables";
+
+.home {
+  width: 100%;
+  margin-top: 45px;
+  padding-top: 80px;
+}
+
+.looper {
+  width: 700px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.home-left {
+  p {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+  strong {
+    color: $blue;
+    font-size: 64px;
+    text-transform: uppercase;  
+  }
+
+  .home-buttons {
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 11px 32px;
+      border-radius: 5px;
+   
+      border-width: 2px;
+      border-style: solid;
+      border-image: $gradient-pink 1;
+      background: transparent;
+      color: $light;
+    }
+  }
+
+
+
+}
+.presentation {
+
+ button {
+  padding: 11px 23px;
+
+ }
+}

@@ -22,6 +22,8 @@ header {
     justify-content: space-between;
     color: $gray-light;
     gap: $gap-6;
+
+    cursor: pointer;
     
     li{
       font-size: 1.8rem;
