@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button,
+input {
+  border: 0;
+  font-family: "Inter", sans-serif;
+}
+
+button:focus,
+input:focus {
+  border: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #151515;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #151515;
+  border-radius: 8px;
+}
+
+header {
+  width: 100%;
+  padding: 40px 180px;
+}
+
+header .logo {
+  color: #00D2DF;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header #nav_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #C4C4C4;
+  gap: 64px;
+}
+
+header #nav_list li {
+  font-size: 1.8rem;
+}
+
+.mobile-menu {
+  display: none;
+}
