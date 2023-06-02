@@ -16,6 +16,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 p,
 h1,
 h2,
@@ -28,12 +34,18 @@ h6 {
 
 button,
 input {
+  border: 0;
   font-family: "Inter", sans-serif;
+}
+
+button:focus,
+input:focus {
+  border: 0;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  background-color: #151515;
+  background-color: #0C0C0C;
   overflow-x: hidden;
 }
 
@@ -96,7 +108,7 @@ header #nav_list li {
 }
 
 .looper {
-  width: 700px;
+  width: 600px;
   position: absolute;
   top: 0;
   right: 0;
@@ -125,12 +137,11 @@ header #nav_list li {
   justify-content: center;
   gap: 10px;
   padding: 11px 32px;
-  border-radius: 5px;
-  border-width: 2px;
-  border-style: solid;
-  border-image: linear-gradient(270.06deg, #6518B4 0%, #D24074 101.62%) 1;
+  border-radius: 4px;
+  border: 2px solid #00D2DF;
   background: transparent;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .presentation button {
@@ -140,8 +151,13 @@ header #nav_list li {
 main {
   padding: 0 180px;
   color: #FFFFFF;
-  display: flex;
+  height: 100vh;
   font-weight: 600;
   width: 100%;
   position: relative;
+}
+
+section {
+  margin-top: 100px;
+  border: 1px solid red;
 }

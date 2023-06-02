@@ -7,9 +7,14 @@
 main {
   padding: 0 180px;
   color: $light;
-  display: flex;
+  height: 100vh;
   font-weight: 600;
   width: 100%;
   position: relative;
+}
+
+section {
+  margin-top: 100px;
+  border: 1px solid red;
 }
 
