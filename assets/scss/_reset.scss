@@ -15,11 +15,11 @@ ol {
 a {
   text-decoration: none;
 }
-// img {
-//   max-width: 100%;
-//   height: auto;
-//   display: block;
-// }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 p,
 h1,
 h2,
@@ -31,14 +31,15 @@ h6 {
 }
 button,
 input { 
+  border: 0;
   font-family: $font-main;
-  // &:focus {
-  //   border: 0;
-  // }
+  &:focus {
+    border: 0;
+  }
 }
 body {
   font-family: $font-main;
-  background-color: $dark-200;
+  background-color: #0C0C0C;
   overflow-x: hidden;
 }
 html {
