@@ -2,10 +2,10 @@
 @import "_reset";
 @import "_header";
 @import "_home";
+@import "_about";
 
 
 main {
-  padding: 0 180px;
   color: $light;
   height: 100vh;
   font-weight: 600;
@@ -13,8 +13,5 @@ main {
   position: relative;
 }
 
-section {
-  margin-top: 100px;
-  border: 1px solid red;
-}
+
 
