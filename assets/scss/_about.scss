@@ -4,10 +4,24 @@
     background-color: $dark-200;
     padding: 102px 180px;
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 183px;
+    width: 100%;
+    padding: 102px 180px;
     
 }
+
+@media screen and (max-width: 375px)  {
+  .about  {
+    padding: 56px 24px;
+  }
+  .about-image {
+    display: none;
+  }
+}
+
+
+
 
 .about-image {
   background-color: $dark;
@@ -62,4 +76,5 @@
     }
   }
 
+  
 }
