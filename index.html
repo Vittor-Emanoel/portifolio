@@ -12,64 +12,47 @@
   <title>Portifólio</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <h1 class="logo">Portifólio</h1>
-      <ul id="nav_list">
-        <li>Home</li>
-        <li>Sobre mim</li>
-        <li>Experiência</li>
-        <li>Projetos</li>
-      </ul>
-    </nav>
-  </header>
-    <main>
-      <div class="home">
-          <div class="home-left">
-            <p>Olá, eu sou</p>
-            <strong>Vittor</strong>
-            <p>Desenvolvedor Front-end & UI Designer.</p>
-
-            <div class="home-buttons">
-              <button href="" id="linkedin">
-                <img src="./assets/icons/linkedin.svg" alt="">
-                Linkedin
-              </button>
-              <button href="" id="github"> 
-                <img src="./assets/icons/github.svg" alt="">
-                GitHub
-              </button>
-            </div>
-          </div>
-          <img src="./assets/images/Looper BG.svg" alt="" class="looper"> 
+  <nav id="navigation">
+      <a class="logo" href="#">
+        <p>Portifólio</p>
+      </a>
+      <div class="menu">
+        <ul>
+          <li><a onclick='closeMenu()'href= "#home">Home</a></li>
+          <li><a onclick='closeMenu()'href="#services">Sobre mim</a></li>
+            <li><a href="#">Experiência</a></li>
+            <li><a href="#">Projetos</a></li>
+            <a class="button" onclick="closeMenu()" href="#contact">Entrar em contato</a>
+        </ul>  
       </div>
+          
+          <button 
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="open-menu"
+          onclick="openMenu()">  
+          
+        <svg width="28" height="15" viewBox="0 0 28 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="28" height="1" fill="white"/>
+          <rect y="7" width="28" height="1" fill="white"/>
+          <rect x="14" y="14" width="14" height="1" fill="white"/>
+        </svg>
+        
+       
+      </button>
+      <!-- <button
+      aria-expanded="true"
+      aria-label="Fechar menu" 
+      class="close-menu"
+      onclick="closeMenu()">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button> -->
+    </div>
+  </nav>
 
-
-      <section class="about">
-        <div class="about-image">
-          <img src="./assets/perfil.png" alt="">
-        </div>
-
-        <div class="about-infos">
-          <strong>Sobre mim</strong>
-          <span>São Paulo, Brasil</span>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent id egestas dui. Nullam finibus aliquam enim quis faucibus. Aenean ac commodo dolor, nec bibendum velit.</p>
-
-          <div class="about-buttons">
-            <button href="" id="linkedin">
-              <img src="./assets/icons/linkedin.svg" alt="">
-              Linkedin
-            </button>
-            <button href="">
-              <img src="./assets/icons/github.svg" alt="">
-              GitHub
-            </button>
-          </div>
-        </div>
-
-      </section>
-    </main>
+  
 
   <script src="./assets/js/index.js"></script>
 </body>

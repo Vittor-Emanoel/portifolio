@@ -1,16 +1,125 @@
 @import "_variables";
 @import "_reset";
-@import "_header";
-@import "_home";
-@import "_about";
 
-main {
-  color: $light;
-  height: 100vh;
-  font-weight: 600;
+body {
+  background-color: $dark;
+  overflow: overlay;
+}
+
+html,
+body {
   width: 100%;
-  position: relative;
+  height: 100%;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  height: 34px;
+  padding: 24px;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+
+  z-index: 100;
+
+
+  button {
+    background: transparent;
+    border: 0;
+  }
+
+  .logo {
+    font-size: 18px;
+    text-decoration: none;
+    color: $blue;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+
+}
+
+body.menu-expanded {
+  overflow: hidden;
+}
+body.menu-expanded > :not(nav) {
+  visibility: hidden;
+}
+.menu,
+.close-menu,
+body.menu-expanded .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*menu ativado*/
+
+body.menu-expanded .menu, 
+body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+ 
+}
+
+.menu {
+  transform: translateX(100%);
+}
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #151515;
+  width: 100vw;
+  height: 100vh;
+  
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: transform 700ms; /*BRIQUEE*/
+  transform: translateX(0);
+
+
+ li {
+  margin-top: 8px;
+
+  a {
+   font-size: 18px;
+   text-decoration: none;
+   color: #FFFF;
+  }
+ }
+
+ ul {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  .button {
+    width: 250px;
+    padding: 16px;
+    font-weight: 600;
+    background-color: #FFFF;
+    color: #000;
+    border-radius: 10px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+ }
+
 }
 
 
-
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 100;
+}
+ 
